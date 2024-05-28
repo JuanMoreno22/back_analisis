@@ -4,6 +4,10 @@ from app.schema import InputData, PredictionResponse
 
 app = FastAPI()
 
+@app.get("/")
+async def root():
+    return {"message": "Proyecto analisis de datos"}
+
 @app.post("/predict", response_model=PredictionResponse)
 async def predict(data: InputData):
     prediction = predict_price(data)
