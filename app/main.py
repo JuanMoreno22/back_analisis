@@ -9,7 +9,7 @@ app = FastAPI()
 origins = [
     "http://localhost",
     "http://localhost:3000",
-    "http://tu-dominio.com",
+    "https://home-prediction.vercel.app/",
     # Agrega aquí otros dominios permitidos
 ]
 
